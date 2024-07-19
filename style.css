@@ -3,11 +3,9 @@
 
 /*
    New Perspectives on HTML5 and CSS3, 8th Edition
-   Author:	Juan Benavides
-   Date:	7-11-24
-   
+   Author: Juan Benavides
+   Date:   7-18-24
    Filename: style.css
-   Project:  2.2
 */
 
 
@@ -61,33 +59,140 @@ nav.navigationBar li{
 	float: left;
 	width: 20%; }
 
-article > p {
-	padding-left: 5%;}
-
-div > img {
-	padding: 2% 1% 2% 15%; }
-
-
-/* Grid Styles for Page Body */
-body { 
- display: grid; 
- grid-template-columns: 1fr 1fr;
- grid-template-areas: 	"header header" 
-						"article1 section1" 
-						"footer footer";}
-
-body > header { 
- grid-row: 1; 
- grid-column: 1/-1; }
-
-body > article {grid-area: article1;}
-body > div {grid-area: section1;}
-body > footer {grid-area: footer;}
-
-
 
 /* Style Footer */
 footer {
  background-color: ForestGreen;
  font-size: 0.8em; 
  text-align: center; }
+
+
+/* Home/Index Page Style */
+.home_style header{
+	grid-row: 1;
+	grid-column: 1/-1; }
+	
+.home_style div .colorText{
+	color: black;
+	font-weight: bold; }
+
+.home_style div.gallery {
+	display: inline-block; 
+	border: 2px solid; border-color: black; 
+	margin-bottom: 3px; }
+	
+.home_style div.gallery:hover {
+	border: 2px solid; border-color: white; }
+
+.home_style div.gallery img {
+	width: 200px; height: 150px; }
+	
+.home_style div.gallery .description{
+	padding: 5px; text-align: center; }
+
+.home_style footer{
+	grid-row: 5;
+	grid-column: 1/-1; }
+
+
+/* Mexican Page Style */
+.mexican_style {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "header header" 
+						"right1 left1" 
+						"right2 left2"
+						"right3 left3" 						
+						"footer footer";}
+
+.mexican_style header{
+	grid-row: 1;
+	grid-column: 1/-1; }
+
+#mex1 {padding-left: 10%;}
+#mex2 {padding-left: 10%;}
+#mex3 {padding-left: 10%;}
+	
+#mex11 img {width: 120px; height: 120px; padding-top: 3px; }
+#mex12 img {width: 120px; height: 120px; }
+#mex13 img {width: 120px; height: 120px; }
+
+.mexican_style footer{
+	grid-row: 10;
+	grid-column: 1/-1; }
+
+
+/* Fine Dining Page Style */
+.fine_style {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "header header" 
+						"right1 left1" 
+						"right2 left2"
+						"right3 left3" 						
+						"footer footer";}
+
+.fine_style header{
+	grid-row: 1;
+	grid-column: 1/-1; }
+
+#fine1 {padding-left: 10%;}
+#fine2 {padding-left: 10%;}
+#fine3 {padding-left: 10%;}
+	
+#fine11 img {width: 120px; height: 120px; padding-top: 3px; }
+#fine12 img {width: 120px; height: 120px; }
+#fine13 img {width: 120px; height: 120px; }
+
+.fine_style footer{
+	grid-row: 10;
+	grid-column: 1/-1; }
+
+
+/* Burger and Pizza Page Style */
+.burger_style {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "header header" 
+						"right1 left1" 
+						"right2 left2"
+						"right3 left3" 						
+						"footer footer";}
+
+.burger_style header{
+	grid-row: 1;
+	grid-column: 1/-1; }
+
+#burger1 {padding-left: 10%;}
+#burger2 {padding-left: 10%;}
+#burger3 {padding-left: 10%;}
+	
+#burger11 img {width: 120px; height: 120px; padding-top: 3px; }
+#burger12 img {width: 120px; height: 120px; }
+#burger13 img {width: 120px; height: 120px; }
+
+.burger_style footer{
+	grid-row: 10;
+	grid-column: 1/-1; }
+
+
+/* Contact Page Style */
+.contact_style {
+  display: grid;
+  grid-template-columns: 1fr;}
+  
+.contact_style legend {
+	background-color: black;
+	border-radius: 20px;
+	padding: 10px 40px 10px 40px;}
+
+.contact_style fieldset {
+	background-color: LightSeaGreen;
+	border-radius: 20px;
+	font-weight: bold; }
+	
+.contact_style textarea {
+	border-radius: 10px;
+	height: 10em;
+	width: 95%}
+

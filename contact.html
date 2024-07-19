@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--  
+	Class:		CIS162 HTML and CSS
+	Author: 	Juan Benavdes
+	Date:		7-18-24
+	Filename: 	contact.html
+	Project: 	2.3
+	-->
+	<meta charset="utf-8">
+	<title>JB Project 2.3 - Contact Us</title>
+	<link href="style.css" rel="stylesheet">	
+</head>
+
+
+<body class="contact_style">
+
+	<header>
+		<img src="Images/banner02.jpg" alt="Food Spread Image">
+
+	<nav class="navigationBar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="mexican.html">Mexican Food</a></li>
+			<li><a href="fine.html">Fine Dining</a></li>
+			<li><a href="burger.html">Burger & Pizza</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>	
+	</header>
+	
+	
+	<main>
+		<p>
+		Maywood Eats<br>
+		5600 S. Altnatic Blvd.<br>
+		Maywood, CA 90270<br>
+		</p><br>
+	</main>
+	
+	
+	<fieldset>
+		<legend>Have a question or share an experience</legend>
+	<form><br>
+		<div>
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" placeholder="Roberto">
+		</div><br>
+		
+		<div>
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" placeholder="SquarePantalones">
+		</div><br>
+		
+		<div>
+			<label for="email">E-Mail:</label>
+			<input type="email" id="email" name="email" placeholder="SPantalones@Cartoon.com">
+		</div><br>
+		
+		<div>
+			<label for="phone">Phone Number:</label>
+			<input type="tel" id="phone" name="phone" placeholder="(213) 555-1234">
+		</div><br>
+		
+		<div>
+			<label for="rest_vist">Restaurant Visited:</label>
+			<input type="text" id="rest_vist" name="rest_vist" placeholder="Jack In The Box">
+		</div><br>		
+		
+		<div>
+			<label for="rangeBox">Rate the overall service</label><br>
+			0 
+			<input name="serviceRate" id="rangeBox" type="range"
+				value="2.5" step="0.5" min="0" max="5">
+			5
+		</div><br>
+		
+		<div>
+			<label for="question">Questions or Experience</label><br>
+			<textarea name="question" id="question"></textarea>
+		</div><br>
+		
+		<div>
+			<input type="reset">
+			<input type="submit">
+		</div>
+	</form>
+	</fieldset><br>
+
+
+	<footer><br>
+		<a href="mailto:WebMaster@DecoDesigns.com"> Webmaster contact</a>
+	</footer>
+	
+</body>
+</html>
