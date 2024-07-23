@@ -17,7 +17,7 @@ body { color: #FFFFFF;
 		margin-left: auto; 
 		margin-right: auto;
 		max-width: 960px; 
-		min-width: 640px; 
+		min-width: 320px; 
 		width: 95%;}
 
 
@@ -96,6 +96,33 @@ footer {
 
 
 /* Mexican Page Style */
+.mexican_style{all:unset;}
+
+.mexican_style {
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;}
+
+.mexican_style header img {margin-top: 8px; }
+
+.mexican_style .accordion-button {
+    background-color: MediumSeaGreen;
+    color: white;
+    border: none; }
+
+.mexican_style .accordion-body {background-color: MediumSeaGreen; }
+
+.mexican_style .accordion-button:focus,
+.mexican_style .accordion-button:not(.collapsed) {
+    border: none;
+    box-shadow: none; }
+
+.mexican_style .accordion-button:not(.collapsed) {
+    background-color: ForestGreen; 
+    color: white; }
+
+#mex14 img {display: block; margin-left: auto; margin-right: auto; }
+
 .mexican_style {
    display: grid; 
    grid-template-columns: 1fr 1fr;
@@ -150,18 +177,13 @@ footer {
 
 
 /* Burger and Pizza Page Style */
-.burger_style {
-   display: grid; 
-   grid-template-columns: 1fr 1fr;
-   grid-template-areas: "header header" 
-						"right1 left1" 
-						"right2 left2"
-						"right3 left3" 						
-						"footer footer";}
+.burger_style{
+	background-color: MediumSeaGreen;
+	background-position: 5% 0; }
 
-.burger_style header{
-	grid-row: 1;
-	grid-column: 1/-1; }
+.burger_style header img {margin-top: 8px; }
+
+.burger_style .bkgcolor{color: white; background-color: MediumSeaGreen; }
 
 #burger1 {padding-left: 10%;}
 #burger2 {padding-left: 10%;}
