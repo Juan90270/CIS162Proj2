@@ -10,7 +10,7 @@
 
 
 /* Style Body and HTML */
-html { background-color: MediumSeaGreen; 
+html { background-color: rgb(10, 49, 97); 
 		font-family: Verdana, Geneva, Arial, sans-serif;}
 
 body { color: #FFFFFF; 
@@ -40,7 +40,7 @@ body > header > img {
 /* Style Navigation */	
 nav.navigationBar ul{
 	list-style-type: none;
-	background-color: ForestGreen; 
+	background-color: rgb(179,25,40); 
 	padding: 0px;
 	margin: 0px;
 	overflow: hidden; }
@@ -53,7 +53,7 @@ nav.navigationBar a{
 	text-align: center; }
 
 nav.navigationBar a:hover, nav.navigationBar a:active { 
-	background-color: DarkGreen; }
+	background-color: rgb(240,0,60); }
 
 nav.navigationBar li{
 	float: left;
@@ -62,9 +62,11 @@ nav.navigationBar li{
 
 /* Style Footer */
 footer {
- background-color: ForestGreen;
+ background-color: rgb(179,25,40);
  font-size: 0.8em; 
  text-align: center; }
+ 
+ a:link{color: gray; }
 
 
 /* Home/Index Page Style */
@@ -73,12 +75,12 @@ footer {
 	grid-column: 1/-1; }
 	
 .home_style div .colorText{
-	color: black;
+	color: gray;
 	font-weight: bold; }
 
 .home_style div.gallery {
 	display: inline-block; 
-	border: 2px solid; border-color: black; 
+	border: 2px solid; border-color: gray; 
 	margin-bottom: 3px; }
 	
 .home_style div.gallery:hover {
@@ -106,11 +108,13 @@ footer {
 .mexican_style header img {margin-top: 8px; }
 
 .mexican_style .accordion-button {
-    background-color: MediumSeaGreen;
+    background-color: rgb(179,25,40);
     color: white;
     border: none; }
 
-.mexican_style .accordion-body {background-color: MediumSeaGreen; }
+.mexican_style .accordion-body {
+	background-color: rgb(10, 49, 97); 
+	color: white; }
 
 .mexican_style .accordion-button:focus,
 .mexican_style .accordion-button:not(.collapsed) {
@@ -118,7 +122,7 @@ footer {
     box-shadow: none; }
 
 .mexican_style .accordion-button:not(.collapsed) {
-    background-color: ForestGreen; 
+    background-color: gray; 
     color: white; }
 
 #mex14 img {display: block; margin-left: auto; margin-right: auto; }
@@ -178,12 +182,14 @@ footer {
 
 /* Burger and Pizza Page Style */
 .burger_style{
-	background-color: MediumSeaGreen;
+	background-color: rgb(10, 49, 97);
 	background-position: 5% 0; }
 
 .burger_style header img {margin-top: 8px; }
 
-.burger_style .bkgcolor{color: white; background-color: MediumSeaGreen; }
+.burger_style .bkgcolor{
+	color: white; 
+	background-color: rgb(10, 49, 97); }
 
 #burger1 {padding-left: 10%;}
 #burger2 {padding-left: 10%;}
@@ -204,12 +210,12 @@ footer {
   grid-template-columns: 1fr;}
   
 .contact_style legend {
-	background-color: black;
+	background-color: rgb(179,25,40);
 	border-radius: 20px;
 	padding: 10px 40px 10px 40px;}
 
 .contact_style fieldset {
-	background-color: LightSeaGreen;
+	background-color: gray;
 	border-radius: 20px;
 	font-weight: bold; }
 	
